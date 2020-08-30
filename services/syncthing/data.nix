@@ -62,6 +62,12 @@ with lib;
             "dreamlogic" "inabsentia" "mi_mix_3" "stowaway"
           ];
         };
+        "${dataDir}/MiMix3/calls" = {
+          id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
+          devices = [
+            "dreamlogic" "mi_mix_3" "stowaway"
+          ];
+        };
       };
     };
   };

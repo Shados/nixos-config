@@ -11,9 +11,6 @@ with lib;
           addresses = [ "tcp://home.shados.net:22000" ];
           id = "DOXL73C-CUSNSZU-L2RMPH2-A72HBTQ-X6DKNFU-UTRQPA5-GYZDISE-HP75MQY";
         };
-        inabsentia = {
-          id = "PVEBK44-4N4QOX7-RDXABYQ-FIYJFSI-PNBQISX-YQVGRHV-CGA2P6N-IVXOAAC";
-        };
         lg_g8s = {
           id = "H7TGIVN-IYMTGHV-73E7SEP-MP5YWY7-52QNQ4T-UZL73YC-TA5LEJR-4XWAMQO";
         };
@@ -32,25 +29,25 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
+            "dap" "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
+            "dap" "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {
           id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
           devices = [
-            "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow"
+            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow"
           ];
         };
         "${dataDir}/photos/dap" = {
           id = "lg-us998_c3tg-photos"; label = "DAP Photos";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "stowaway" "whatliesbelow"
+            "dap" "dreamlogic" "stowaway" "whatliesbelow"
           ];
         };
         "${dataDir}/MiMix3/calls" = {

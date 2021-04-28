@@ -20,7 +20,7 @@ with lib;
         inabsentia = {
           id = "PVEBK44-4N4QOX7-RDXABYQ-FIYJFSI-PNBQISX-YQVGRHV-CGA2P6N-IVXOAAC";
         };
-        mi_mix_3 = {
+        lg_g8s = {
           id = "H7TGIVN-IYMTGHV-73E7SEP-MP5YWY7-52QNQ4T-UZL73YC-TA5LEJR-4XWAMQO";
         };
         stowaway = {
@@ -35,19 +35,19 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "mi_mix_3" "stowaway" "theroadnottaken"
+            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "theroadnottaken"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "mi_mix_3" "stowaway" "theroadnottaken"
+            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "theroadnottaken"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {
-          id = "mi_mix_3_exbj-photos"; label = "Mi Mix 3 Photos";
+          id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
           devices = [
-            "dreamlogic" "inabsentia" "mi_mix_3" "stowaway"
+            "dreamlogic" "inabsentia" "lg_g8s" "stowaway"
           ];
         };
         "${dataDir}/photos/dap" = {
@@ -56,16 +56,16 @@ with lib;
             "dap" "dreamlogic" "inabsentia" "stowaway"
           ];
         };
-        "${dataDir}/MiMix3/TitaniumBackup" = {
-          id = "d73zd-qu596"; label = "MiMix3-TitaniumBackup";
-          devices = [
-            "dreamlogic" "inabsentia" "mi_mix_3" "stowaway"
-          ];
-        };
         "${dataDir}/MiMix3/calls" = {
           id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
           devices = [
-            "dreamlogic" "mi_mix_3" "stowaway"
+            "dreamlogic" "stowaway"
+          ];
+        };
+        "${dataDir}/lg_g8s/calls" = {
+          id = "sj28t-854ug"; label = "LG G8s Calls";
+          devices = [
+            "dreamlogic" "lg_g8s" "stowaway"
           ];
         };
       };

@@ -24,7 +24,7 @@ with lib;
         whatliesbelow = {
           id = "F2H4ADC-YPHZ7HR-ZHKHU4N-VFIFCC4-ZTF2LUX-X7RIN3N-5NDVTSC-LORBLQT";
         };
-        whitetulip = {
+        theroadnottaken = {
           id = "HZUS7FV-2IDGXML-KQ2J527-3LY4ERQ-RVRMSWG-MW64N4Z-MJKV5NR-KTNIEQE";
         };
       };
@@ -32,37 +32,37 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {
           id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
           devices = [
-            "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whatliesbelow"
           ];
         };
         "${dataDir}/photos/dap" = {
           id = "lg-us998_c3tg-photos"; label = "DAP Photos";
           devices = [
-            "dap" "dreamlogic" "inabsentia" "stowaway" "whatliesbelow" "whitetulip"
+            "dap" "dreamlogic" "inabsentia" "stowaway" "whatliesbelow"
           ];
         };
         "${dataDir}/MiMix3/calls" = {
           id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
           devices = [
-            "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "stowaway" "whatliesbelow"
           ];
         };
         "${dataDir}/lg_g8s/calls" = {
           id = "sj28t-854ug"; label = "LG G8s Calls";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow"
           ];
         };
       };

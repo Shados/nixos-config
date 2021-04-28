@@ -4,9 +4,6 @@ with lib;
   services.syncthing = {
     declarative = {
       devices = {
-        dap = {
-          id = "5M7O2NR-PLA6D77-3IO7BY4-RD2TZVE-7KBS63J-ZF3DT4U-HD5E4SU-WQIIIAU";
-        };
         dreamlogic = {
           addresses = [ "tcp://home.shados.net:22000" ];
           id = "DOXL73C-CUSNSZU-L2RMPH2-A72HBTQ-X6DKNFU-UTRQPA5-GYZDISE-HP75MQY";
@@ -18,48 +15,53 @@ with lib;
           addresses = [ "tcp://stowaway.shados.net:22000" ];
           id = "IOLIFRQ-SCKCXRM-HXGGTMY-TB3GSAL-3HUGL4S-G3MOK6C-MOD6EDU-TYOTHA6";
         };
-        whatliesbelow = {
-          id = "F2H4ADC-YPHZ7HR-ZHKHU4N-VFIFCC4-ZTF2LUX-X7RIN3N-5NDVTSC-LORBLQT";
-        };
         theroadnottaken = {
           id = "HZUS7FV-2IDGXML-KQ2J527-3LY4ERQ-RVRMSWG-MW64N4Z-MJKV5NR-KTNIEQE";
+        };
+        whatliesbelow = {
+          id = "F2H4ADC-YPHZ7HR-ZHKHU4N-VFIFCC4-ZTF2LUX-X7RIN3N-5NDVTSC-LORBLQT";
+          addresses = [ "tcp://whatliesbelow.shados.net:22000" ];
+        };
+        whitetulip = {
+          id = "EAQKQBZ-NR4GLKD-6CQ4S5A-ALO4MZU-6NRNWOK-YEPEZVC-CXADG7G-QHWHFQI";
+          addresses = [ "tcp://whitetulip.shados.net:22000" ];
         };
       };
       folders = let inherit (config.services.syncthing) dataDir; in {
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
+            "dreamlogic" "lg_g8s" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "theroadnottaken"
+            "dreamlogic" "lg_g8s" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {
           id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow"
+            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/photos/dap" = {
           id = "lg-us998_c3tg-photos"; label = "DAP Photos";
           devices = [
-            "dap" "dreamlogic" "stowaway" "whatliesbelow"
+            "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/MiMix3/calls" = {
           id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
           devices = [
-            "dreamlogic" "stowaway" "whatliesbelow"
+            "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/lg_g8s/calls" = {
           id = "sj28t-854ug"; label = "LG G8s Calls";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow"
+            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
       };

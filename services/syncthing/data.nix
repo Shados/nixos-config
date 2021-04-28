@@ -19,7 +19,7 @@ with lib;
           id = "HZUS7FV-2IDGXML-KQ2J527-3LY4ERQ-RVRMSWG-MW64N4Z-MJKV5NR-KTNIEQE";
         };
         whatliesbelow = {
-          id = "F2H4ADC-YPHZ7HR-ZHKHU4N-VFIFCC4-ZTF2LUX-X7RIN3N-5NDVTSC-LORBLQT";
+          id = "RZCSRQT-SWTOY4T-444OALP-DFC2ZPD-EUMBYKN-UBT6EPG-Y46MGIS-AFKAYAH";
           addresses = [ "tcp://whatliesbelow.shados.net:22000" ];
         };
         whitetulip = {

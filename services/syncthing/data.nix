@@ -11,12 +11,6 @@ with lib;
           addresses = [ "tcp://home.shados.net:22000" ];
           id = "DOXL73C-CUSNSZU-L2RMPH2-A72HBTQ-X6DKNFU-UTRQPA5-GYZDISE-HP75MQY";
         };
-        # greymatters = {
-        #   id = "5BMCLMS-DU4TLRP-JFCPR2G-57GUPO3-VL4SAXV-7UZHQD7-VIORCUO-IJC36QM";
-        # };
-        forcedperspective = {
-          id = "MEXG6FO-SQRPG3F-ZZFUX3L-KOCA5Q4-ZNXACON-PAKDDFL-ZQIZPNY-IINY2AL";
-        };
         inabsentia = {
           id = "PVEBK44-4N4QOX7-RDXABYQ-FIYJFSI-PNBQISX-YQVGRHV-CGA2P6N-IVXOAAC";
         };
@@ -35,13 +29,13 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
+            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
+            "dap" "dreamlogic" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {

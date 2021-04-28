@@ -27,7 +27,7 @@ with lib;
           addresses = [ "tcp://stowaway.shados.net:22000" ];
           id = "IOLIFRQ-SCKCXRM-HXGGTMY-TB3GSAL-3HUGL4S-G3MOK6C-MOD6EDU-TYOTHA6";
         };
-        theroadnottaken = {
+        whitetulip = {
           id = "HZUS7FV-2IDGXML-KQ2J527-3LY4ERQ-RVRMSWG-MW64N4Z-MJKV5NR-KTNIEQE";
         };
       };
@@ -35,13 +35,13 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "theroadnottaken"
+            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "theroadnottaken"
+            "dap" "dreamlogic" "forcedperspective" "inabsentia" "lg_g8s" "stowaway" "whitetulip"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {

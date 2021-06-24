@@ -8,8 +8,8 @@ with lib;
           addresses = [ "tcp://home.shados.net:22000" ];
           id = "DOXL73C-CUSNSZU-L2RMPH2-A72HBTQ-X6DKNFU-UTRQPA5-GYZDISE-HP75MQY";
         };
-        lg_g8s = {
-          id = "H7TGIVN-IYMTGHV-73E7SEP-MP5YWY7-52QNQ4T-UZL73YC-TA5LEJR-4XWAMQO";
+        mi_mix_3 = {
+          id = "4BCRTXN-RCPJQUN-SNNQK6E-3Q36RA4-NYC7V6W-DK55IJY-FOSQ5PF-WGRFEQZ";
         };
         stowaway = {
           addresses = [ "tcp://stowaway.shados.net:22000" ];
@@ -31,19 +31,19 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
+            "dreamlogic" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
+            "dreamlogic" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/photos/mi_mix_3" = {
           id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/photos/dap" = {
@@ -55,13 +55,19 @@ with lib;
         "${dataDir}/MiMix3/calls" = {
           id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
           devices = [
-            "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
+          ];
+        };
+        "${dataDir}/MiMix3/backups" = {
+          id = "mi_mix_3-backups"; label = "Mi Mix 3 Backups";
+          devices = [
+            "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/lg_g8s/calls" = {
           id = "sj28t-854ug"; label = "LG G8s Calls";
           devices = [
-            "dreamlogic" "lg_g8s" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
       };

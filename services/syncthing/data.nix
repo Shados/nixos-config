@@ -8,6 +8,9 @@ with lib;
           addresses = [ "tcp://home.shados.net:22000" ];
           id = "DOXL73C-CUSNSZU-L2RMPH2-A72HBTQ-X6DKNFU-UTRQPA5-GYZDISE-HP75MQY";
         };
+        lg_v50 = {
+          id = "22DR3KD-ZDNLB4A-YMCZQT4-WTNLZ7R-2MVGQN2-CADGUDN-XU6RMAS-DFPHCAN";
+        };
         mi_mix_3 = {
           id = "4BCRTXN-RCPJQUN-SNNQK6E-3Q36RA4-NYC7V6W-DK55IJY-FOSQ5PF-WGRFEQZ";
         };
@@ -31,41 +34,59 @@ with lib;
         "${dataDir}/notes" = {
           id = "notes"; label = "Notes";
           devices = [
-            "dreamlogic" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
+            "dreamlogic" "lg_v50" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/secure" = {
           id = "secure"; label = "Secure";
           devices = [
-            "dreamlogic" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
-          ];
-        };
-        "${dataDir}/photos/mi_mix_3" = {
-          id = "mi_mix_3_exbj-photos"; label = "Main Phone Photos";
-          devices = [
-            "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
+            "dreamlogic" "lg_v50" "mi_mix_3" "stowaway" "theroadnottaken" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/photos/dap" = {
-          id = "lg-us998_c3tg-photos"; label = "DAP Photos";
+          id = "lg-us998_c3tg-photos"; label = "Photos: DAP";
           devices = [
             "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
+        "${dataDir}/photos/lg_v50" = {
+          id = "lg_v50-photos"; label = "Photos: LG V50";
+          devices = [
+            "dreamlogic" "lg_v50" "stowaway" "whatliesbelow" "whitetulip"
+          ];
+        };
+        "${dataDir}/photos/mi_mix_3" = {
+          id = "mi_mix_3_exbj-photos"; label = "Photos: Mi Mix 3";
+          devices = [
+            "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
+          ];
+        };
+        "${dataDir}/lg_v50/calls" = {
+          id = "lg_v50-calls"; label = "Phone Calls: LG V50";
+          devices = [
+            "dreamlogic" "lg_v50" "stowaway" "whatliesbelow" "whitetulip"
+          ];
+        };
+        "${dataDir}/lg_v50/backups" = {
+          id = "lg_v50-backups"; label = "Phone Backups: LG V50";
+          devices = [
+            "dreamlogic" "lg_v50" "stowaway" "whatliesbelow" "whitetulip"
+          ];
+        };
         "${dataDir}/MiMix3/calls" = {
-          id = "eiqqp-3kag8"; label = "Mi Mix 3 Calls";
+          id = "eiqqp-3kag8"; label = "Phone Calls: Mi Mix 3";
           devices = [
             "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/MiMix3/backups" = {
-          id = "mi_mix_3-backups"; label = "Mi Mix 3 Backups";
+          id = "mi_mix_3-backups"; label = "Phone Backups: Mi Mix 3";
           devices = [
             "dreamlogic" "mi_mix_3" "stowaway" "whatliesbelow" "whitetulip"
           ];
         };
         "${dataDir}/lg_g8s/calls" = {
-          id = "sj28t-854ug"; label = "LG G8s Calls";
+          id = "sj28t-854ug"; label = "Phone Calls: LG G8s";
           devices = [
             "dreamlogic" "stowaway" "whatliesbelow" "whitetulip"
           ];
